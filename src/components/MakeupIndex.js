@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getAllMakeup } from '../lib/api';
+import MakeupCard from './MakeupCard';
 
 const MakeupIndex = () => {
   const [makeups, seMakeups] = useState(null);
@@ -14,9 +15,19 @@ const MakeupIndex = () => {
     return <p>Loading Makeup...</p>;
   }
 
-  console.log(makeups);
+  return (
+    <section className="section">
+      <div className="container">
+        <div className="columns is-multiline">
+          {makeups.map((makeup) => (
+            <MakeupCard key={makeup.id} {...makeup} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 
-  return <p>Makeup</p>;
+  console.log(makeups);
 };
 
 export default MakeupIndex;
