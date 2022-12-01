@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const MakeupShow = () => {
+  const { id } = useParams();
   const [makeup, setMakeup] = useState(null);
 
   useEffect(() => {
@@ -25,3 +26,5 @@ const MakeupShow = () => {
     </section>
   );
 };
+
+export default MakeupShow;
