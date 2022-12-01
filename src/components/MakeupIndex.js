@@ -20,7 +20,14 @@ const MakeupIndex = () => {
       <div className="container">
         <div className="columns is-multiline">
           {makeups.map((makeup) => (
-            <MakeupCard key={makeup.id} {...makeup} />
+            <MakeupCard
+              key={makeup.id}
+              name={makeup.name}
+              image={makeup.image_link}
+              brand={makeup.brand}
+              category={makeup.catagory}
+              id={makeup.id}
+            />
           ))}
         </div>
       </div>
