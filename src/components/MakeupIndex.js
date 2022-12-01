@@ -17,25 +17,27 @@ const MakeupIndex = () => {
   }
 
   return (
-    <section className="section">
+    <section className="section has-background-link-light">
       <div className="container">
         <div className="columns is-multiline">
-          {makeups.map((makeup) => (
-            <MakeupCard
-              key={makeup.id}
-              name={makeup.name}
-              image={makeup.image_link}
-              brand={makeup.brand}
-              category={makeup.catagory}
-              id={makeup.id}
-            />
-          ))}
+          {makeups.map((makeup) => {
+            if (makeup.id > 0 && makeup.id < 129) {
+              return (
+                <MakeupCard
+                  key={makeup.id}
+                  name={makeup.name}
+                  image={makeup.image_link}
+                  brand={makeup.brand}
+                  tag={makeup.tag_list}
+                  id={makeup.id}
+                />
+              );
+            }
+          })}
         </div>
       </div>
     </section>
   );
-
-  console.log(makeups);
 };
 
 export default MakeupIndex;

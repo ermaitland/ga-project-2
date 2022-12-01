@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { getSingleMakeup } from '../lib/api';
 
 const MakeupShow = () => {
   const { id } = useParams();
@@ -11,11 +13,19 @@ const MakeupShow = () => {
   }, [id]);
 
   if (makeup === null) {
-    return <p>Take a deep breath...</p>;
+    return (
+      <section className="hero is-fullheight-with-navbar has-background-info-light">
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="has-text-centered">Take a deep breath...</h1>
+          </div>
+        </div>
+      </section>
+    );
   }
 
   return (
-    <section className="section">
+    <section className="section has-background-info-light">
       <div className="container">
         <h2 className="title has-text-centered">{makeup.name}</h2>
         <hr />

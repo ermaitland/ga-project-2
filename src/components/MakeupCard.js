@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 
-const MakeupCard = ({ name, image, brand, category, id }) => {
+const MakeupCard = ({ name, image, brand, tag, id }) => {
   return (
     <>
-      <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+      <div className="column is-one-quarter-desktop is-one-third-tablet">
         <Link to={`/makeups/${id}`}>
-          <div className="card">
+          <div className="card has-background-grey">
             <div className="card-header">
-              <h1 className="title is-4">{name}</h1>
+              <h1 className="title is-4 has-text-centered has-text-white has-font-sans-serif has-text-weight-normal">
+                {name}
+              </h1>
             </div>
             <div className="card-image">
               <figure className="image is-1by1">
@@ -22,9 +24,13 @@ const MakeupCard = ({ name, image, brand, category, id }) => {
             </div>
             <div className="card-content">
               <div className="media">
-                <div className="media-content">
-                  <p className="subtitle is-6">{brand}</p>
-                  <p className="subtitle is-7">Category: {category}</p>
+                <div className="media-content ">
+                  <p className="subtitle is-6 has-text-light is-capitalized">
+                    {brand}
+                  </p>
+                  <p className="subtitle is-7 has-text-light">
+                    This product is: {tag[0]}, Lovely
+                  </p>
                 </div>
               </div>
               <br />

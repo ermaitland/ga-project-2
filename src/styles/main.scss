@@ -1,1 +1,16 @@
-@import '~bulma/bulma.sass'; // ! comment out this line if you DO NOT want to use Bulma
+.FrontPage {
+  .hero-body {
+    background-image: url('https://cdn.britannica.com/35/222035-050-C68AD682/makeup-cosmetics.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+  }
+  .TitleText {
+    font-size: 95px;
+  }
+  .SubtitleText {
+    font-size: 40px;
+    color: hotpink;
+  }
+}
