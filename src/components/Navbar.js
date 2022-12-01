@@ -13,6 +13,9 @@ const Navbar = () => (
         <Link to="/makeups/lipstick" className="navbar-item">
           Lipsticks
         </Link>
+        <Link to="/makeups/nailpaint" className="navbar-item">
+          NailPaints
+        </Link>
       </div>
     </div>
   </nav>
