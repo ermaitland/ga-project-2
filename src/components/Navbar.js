@@ -7,8 +7,8 @@ const Navbar = () => (
         <Link to="/" className="navbar-item">
           Home
         </Link>
-        <Link to="/makeUp" className="navbar-item">
-          Makeup Index
+        <Link to="/makeups" className="navbar-item">
+          All Makeups
         </Link>
       </div>
     </div>
