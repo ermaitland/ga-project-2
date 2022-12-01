@@ -5,6 +5,7 @@ import MakeupIndex from './components/MakeupIndex';
 import LipStick from './components/LipStick';
 import NailPaint from './components/NailPaint';
 import Foundation from './components/Foundation';
+import Mascara from './components/Mascara';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/makeups/lipstick" element={<LipStick />} />
         <Route path="/makeups/nailpaint" element={<NailPaint />} />
         <Route path="/makeups/foundation" element={<Foundation />} />
+        <Route path="/makeups/mascara" element={<Mascara />} />
       </Routes>
     </BrowserRouter>
   );
