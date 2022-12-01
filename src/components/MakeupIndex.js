@@ -28,6 +28,7 @@ const MakeupIndex = () => {
                   name={makeup.name}
                   image={makeup.image_link}
                   brand={makeup.brand}
+                  prodLink={makeup.product_link}
                   tag={makeup.tag_list}
                   id={makeup.id}
                 />

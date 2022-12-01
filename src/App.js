@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import MakeupIndex from './components/MakeupIndex';
-import MakeupShow from './components/MakeupShow';
+import LipStick from './components/LipStick';
 
 const App = () => {
   return (
@@ -10,8 +10,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/makeups/:id" element={<MakeupShow />} />
         <Route path="/makeups" element={<MakeupIndex />} />
+        <Route path="/makeups/lipstick" element={<LipStick />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
-const MakeupCard = ({ name, image, brand, tag, id }) => {
+const MakeupCard = ({ name, image, brand, tag, prodLink }) => {
   return (
     <>
       <div className="column is-one-quarter-desktop is-one-third-tablet">
-        <Link to={`/makeups/${id}`}>
+        <Link to={`/makeups/${brand}`}>
           <div className="card has-background-grey">
             <div className="card-header">
               <h1 className="title is-4 has-text-centered has-text-white has-font-sans-serif has-text-weight-normal">
@@ -27,9 +27,12 @@ const MakeupCard = ({ name, image, brand, tag, id }) => {
                 <div className="media-content ">
                   <p className="subtitle is-6 has-text-light is-capitalized">
                     {brand}
-                  </p>
+                  </p>{' '}
                   <p className="subtitle is-7 has-text-light">
                     This product is: {tag[0]}, Lovely
+                  </p>
+                  <p className="subtitle is-6 has-text-light ">
+                    Product Link: {prodLink}
                   </p>
                 </div>
               </div>

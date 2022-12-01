@@ -4,5 +4,5 @@ const MAKEUP_ENDPOINT = 'http://makeup-api.herokuapp.com/api/v1/products.json';
 
 export const getAllMakeup = () => axios.get(MAKEUP_ENDPOINT);
 
-export const getSingleMakeup = (makeupId) =>
-  axios.get(`${MAKEUP_ENDPOINT}/makeups/${makeupId}`);
+export const getLipStick = () =>
+  axios.get(`${MAKEUP_ENDPOINT}?product_type=lipstick`);
