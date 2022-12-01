@@ -1,3 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://makeup-api.herokuapp.com/api/v1/products.json';
+const MAKEUP_ENDPOINT = 'http://makeup-api.herokuapp.com/api/v1/products.json';
+
+export const getAllMakeup = () =>
+  axios.get('http://makeup-api.herokuapp.com/api/v1/products.json');
