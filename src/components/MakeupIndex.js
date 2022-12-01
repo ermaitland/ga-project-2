@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getAllMakeup } from '../lib/api';
 import MakeupCard from './MakeupCard';
+import Spinner from './Spinner';
 
 const MakeupIndex = () => {
   const [makeups, seMakeups] = useState(null);
@@ -12,7 +13,7 @@ const MakeupIndex = () => {
   }, []);
 
   if (makeups === null) {
-    return <p>Loading Makeup...</p>;
+    return <Spinner />;
   }
 
   return (
@@ -20,7 +21,14 @@ const MakeupIndex = () => {
       <div className="container">
         <div className="columns is-multiline">
           {makeups.map((makeup) => (
-            <MakeupCard key={makeup.id} {...makeup} />
+            <MakeupCard
+              key={makeup.id}
+              name={makeup.name}
+              image={makeup.image_link}
+              brand={makeup.brand}
+              category={makeup.catagory}
+              id={makeup.id}
+            />
           ))}
         </div>
       </div>
