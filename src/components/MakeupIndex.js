@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getAllMakeup } from '../lib/api';
 import MakeupCard from './MakeupCard';
+import Spinner from './Spinner';
 
 const MakeupIndex = () => {
   const [makeups, seMakeups] = useState(null);
@@ -12,7 +13,7 @@ const MakeupIndex = () => {
   }, []);
 
   if (makeups === null) {
-    return <p>Loading Makeup...</p>;
+    return <Spinner />;
   }
 
   return (
