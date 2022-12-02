@@ -8,7 +8,7 @@ export const getLipStick = () =>
   axios.get(`${MAKEUP_ENDPOINT}?product_type=lipstick`);
 
 export const getNailPaint = () =>
-  axios.get(`${MAKEUP_ENDPOINT}?product_type=nailpaint`);
+  axios.get(`${MAKEUP_ENDPOINT}?product_type=nail_polish`);
 
 export const getFoundation = () =>
   axios.get(`${MAKEUP_ENDPOINT}?product_type=foundation`);

@@ -17,7 +17,7 @@ const MakeupIndex = () => {
   }
 
   return (
-    <section className="section has-background-link-light">
+    <section className="section has-background-danger-light">
       <div className="container">
         <div className="columns is-multiline">
           {makeups.map((makeup) => {
@@ -31,6 +31,7 @@ const MakeupIndex = () => {
                   prodLink={makeup.product_link}
                   tag={makeup.tag_list}
                   id={makeup.id}
+                  description={makeup.description}
                 />
               );
             }
