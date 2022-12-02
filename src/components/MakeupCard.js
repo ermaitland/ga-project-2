@@ -1,11 +1,11 @@
 const MakeupCard = ({ name, image, brand, tag, prodLink, description }) => {
   return (
     <>
-      <div className="column is-one-quarter-desktop is-one-third-tablet is-one-mobile">
+      <div className="column is-one-quarter-desktop is-one-third-tablet is-mobile">
         <div className="card has-background-grey-darker">
           <div className="container">
             <div className="card-header Card-Header">
-              <h1 className="title is-4 pt-2 has-text-centered has-text-grey-light has-font-sans-serif has-text-weight-normal">
+              <h1 className="title is-4 pt-2 pl-1 has-text-centered has-text-grey-light has-font-sans-serif has-text-weight-normal">
                 {name}
               </h1>
             </div>

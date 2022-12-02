@@ -24,10 +24,28 @@
   }
 }
 .Card-Header {
-  height: 60px;
+  height: 80px;
 }
 
 .Description {
   max-height: 200px;
   overflow: scroll;
+}
+
+@media only screen and (max-width: 500px) {
+  .FrontPage {
+    .TitleText {
+      font-size: 55px;
+      padding-bottom: 150px;
+    }
+    .SubtitleText {
+      font-size: 40px;
+      color: rgb(242, 51, 223);
+      font-weight: 600;
+      padding-bottom: 260px;
+    }
+    .hero-body {
+      opacity: 0.8;
+    }
+  }
 }
