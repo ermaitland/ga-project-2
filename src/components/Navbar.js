@@ -22,6 +22,9 @@ const Navbar = () => (
         <Link to="/makeups/mascara" className="navbar-item">
           Mascara
         </Link>
+        <Link to="/makeups/eyebrow" className="navbar-item">
+          Eyebrow
+        </Link>
       </div>
     </div>
   </nav>

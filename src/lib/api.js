@@ -15,3 +15,6 @@ export const getFoundation = () =>
 
 export const getMascara = () =>
   axios.get(`${MAKEUP_ENDPOINT}?product_type=mascara`);
+
+export const getEyebrow = () =>
+  axios.get(`${MAKEUP_ENDPOINT}?product_type=eyebrow`);
