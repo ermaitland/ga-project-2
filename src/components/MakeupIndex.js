@@ -17,8 +17,7 @@ const MakeupIndex = () => {
   const filterMakeups = () => {
     const regex = new RegExp(searchQuery, 'i');
     const filterMakeups = makeups.filter((makeup) => {
-      // console.log({productType:})
-      return makeup?.product_type.match(regex) || makeup?.brand.match(regex);
+      return makeup.product_type.match(regex) || makeup.brand?.match(regex);
     });
     return filterMakeups;
   };
@@ -43,7 +42,6 @@ const MakeupIndex = () => {
                     brand={makeup.brand}
                     prodLink={makeup.product_link}
                     tag={makeup.tag_list}
-                    id={makeup.id}
                     description={makeup.description}
                   />
                 );
