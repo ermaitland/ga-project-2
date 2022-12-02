@@ -13,6 +13,9 @@ export const getNailPaint = () =>
 export const getFoundation = () =>
   axios.get(`${MAKEUP_ENDPOINT}?product_type=foundation`);
 
+export const getBlush = () =>
+  axios.get(`${MAKEUP_ENDPOINT}?product_type=blush`);
+
 export const getMascara = () =>
   axios.get(`${MAKEUP_ENDPOINT}?product_type=mascara`);
 

@@ -7,6 +7,7 @@ import NailPaint from './components/NailPaint';
 import Foundation from './components/Foundation';
 import Mascara from './components/Mascara';
 import Eyebrow from './components/Eyebrow';
+import Blush from './components/Blush';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/makeups/lipstick" element={<LipStick />} />
         <Route path="/makeups/nailpaint" element={<NailPaint />} />
         <Route path="/makeups/foundation" element={<Foundation />} />
+        <Route path="/makeups/blush" element={<Blush />} />
         <Route path="/makeups/mascara" element={<Mascara />} />
         <Route path="/makeups/eyebrow" element={<Eyebrow />} />
       </Routes>
