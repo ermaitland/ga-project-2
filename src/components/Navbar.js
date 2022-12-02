@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 
 const Navbar = () => (
-  <nav className="navbar is-dark">
+  <nav className="navbar is-dark is-one-mobile">
     <div className="container">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
+        <Link to="/" className="navbar-item has-text-danger">
           Home
         </Link>
-        <Link to="/makeups" className="navbar-item">
+        <Link to="/makeups" className="navbar-item has-text-danger">
           All Makeups
         </Link>
       </div>
@@ -18,7 +18,7 @@ const Navbar = () => (
           aria-label="dropdown navigation"
         >
           <div className="navbar-item has-dropdown is-hoverable">
-            <div className="navbar-item has-text-white">Explore Further</div>
+            <div className="navbar-item has-text-danger">Explore Further</div>
 
             <div className="navbar-dropdown">
               <Link to="/makeups/lipstick" className="navbar-item">

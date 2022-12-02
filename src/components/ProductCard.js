@@ -1,9 +1,9 @@
 const ProductCard = ({ name, image, brand, tag, prodLink, description }) => {
   return (
-    <div className="column is-one-quarter-desktop is-one-third-tablet ">
-      <div className="card has-background-grey">
+    <div className="column is-one-quarter-desktop is-one-third-tablet is-one-mobile">
+      <div className="card has-background-grey-darker">
         <div className="card-header">
-          <h1 className="title is-4 pt-2 has-text-centered has-text-light has-font-sans-serif has-text-weight-normal">
+          <h1 className="title is-4 pt-2 has-text-centered has-text-grey-light has-font-sans-serif has-text-weight-normal">
             {name}
           </h1>
         </div>
@@ -24,12 +24,12 @@ const ProductCard = ({ name, image, brand, tag, prodLink, description }) => {
               <p className="subtitle is-6 has-text-light is-capitalized">
                 {brand}
               </p>{' '}
-              <p className="subtitle is-7 has-text-light">
+              <p className="subtitle is-7 has-text-grey-light">
                 This product is: Lovely &... {tag[0]}
               </p>
-              <p className="subtitle is-6 has-text-light">
-                Product Link: {prodLink}
-              </p>
+              <a href={prodLink} target="blank">
+                Click here to go to the prduct!
+              </a>
             </div>
           </div>
           <br />
@@ -37,7 +37,7 @@ const ProductCard = ({ name, image, brand, tag, prodLink, description }) => {
         <div className="dropdown is-hoverable pb-2 ml-2">
           <div className="dropdown-trigger">
             <button
-              className="button"
+              className="button has-background-danger-light"
               aria-haspopup="true"
               aria-controls="dropdown-menu4"
             >

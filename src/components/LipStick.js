@@ -18,7 +18,7 @@ function LipStick() {
   }
 
   return (
-    <section className="section has-background-danger-light  is-fulllheight-with-navbar">
+    <section className="section has-background-grey  is-fulllheight-with-navbar">
       <div className="container">
         <div className="columns is-multiline">
           {productTypes.map((singleProduct) => {

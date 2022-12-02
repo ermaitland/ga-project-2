@@ -5,7 +5,7 @@ function Spinner() {
     <section className="hero is-fullheight-with-navbar LoadingPage">
       <div className="hero-body">
         <div className="container">
-          <RiseLoader color="#00FFFF" size="45px" margin="100px" />
+          <RiseLoader color="#DE3163" size="45px" margin="100px" />
         </div>
       </div>
     </section>

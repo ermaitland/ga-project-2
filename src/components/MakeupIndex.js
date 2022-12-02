@@ -17,7 +17,7 @@ const MakeupIndex = () => {
   }
 
   return (
-    <section className="section has-background-danger-light">
+    <section className="section has-background-grey">
       <div className="container">
         <div className="columns is-multiline">
           {makeups.map((makeup) => {

@@ -18,7 +18,7 @@ function Foundation() {
   }
 
   return (
-    <section className="section has-background-danger-light">
+    <section className="section has-background-grey">
       <div className="container">
         <div className="columns is-multiline">
           {productTypes.map((singleProduct) => {
