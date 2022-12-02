@@ -13,11 +13,11 @@ const Navbar = () => (
       </div>
       <div className="navbar-end">
         <nav
-          className="navbar is-dark"
+          className="navbar is-dark Navbar"
           role="navigation"
           aria-label="dropdown navigation"
         >
-          <div className="navbar-item has-dropdown is-hoverable is-mobile">
+          <div className="navbar-item has-dropdown is-hoverable is-mobile ">
             <Link to="/" className="navbar-link has-text-danger">
               Explore Further
             </Link>
