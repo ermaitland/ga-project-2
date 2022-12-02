@@ -32,7 +32,7 @@ const Navbar = () => (
                 to="/makeups/nailpaint"
                 className="navbar-item has-text-danger"
               >
-                NailPaints
+                Nail Polish
               </Link>
               <Link
                 to="/makeups/foundation"

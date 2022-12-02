@@ -8,7 +8,7 @@ function SearchBar({ value, handleChange }) {
           <div className="control is-expanded">
             <input
               type="search"
-              className="input is-medium"
+              className="input is-medium has-background-link-light"
               placeholder="Filter by brand or product"
               value={value}
               onChange={handleInputChange}
@@ -16,8 +16,8 @@ function SearchBar({ value, handleChange }) {
           </div>
           <div className="control">
             <span
-              className="button has-background-danger-light
- is-medium mb-4"
+              className="button has-background-grey-dark has-text-danger
+ is-medium mb-5"
             >
               Search
             </span>
