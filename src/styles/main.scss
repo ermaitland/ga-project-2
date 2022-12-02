@@ -23,3 +23,11 @@
     opacity: 0.8;
   }
 }
+.Card-Header {
+  height: 60px;
+}
+
+.Description {
+  max-height: 200px;
+  overflow: scroll;
+}

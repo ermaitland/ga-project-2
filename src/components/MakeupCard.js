@@ -4,7 +4,7 @@ const MakeupCard = ({ name, image, brand, tag, prodLink, description }) => {
       <div className="column is-one-quarter-desktop is-one-third-tablet is-one-mobile">
         <div className="card has-background-grey-darker">
           <div className="container">
-            <div className="card-header">
+            <div className="card-header Card-Header">
               <h1 className="title is-4 pt-2 has-text-centered has-text-grey-light has-font-sans-serif has-text-weight-normal">
                 {name}
               </h1>
@@ -37,7 +37,7 @@ const MakeupCard = ({ name, image, brand, tag, prodLink, description }) => {
             </div>
             <br />
           </div>
-          <div className="dropdown is-hoverable pb-2 ml-2">
+          <div className="dropdown is-hoverable is-up pb-2 ml-2">
             <div className="dropdown-trigger">
               <button
                 className="button has-background-danger-light"
@@ -48,7 +48,7 @@ const MakeupCard = ({ name, image, brand, tag, prodLink, description }) => {
               </button>
             </div>
             <div className="dropdown-menu" id="dropdown-menu2" role="menu">
-              <div className="dropdown-content">
+              <div className="dropdown-content Description">
                 <div className="dropdown-item">
                   <p>{description}</p>
                 </div>
