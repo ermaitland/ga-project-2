@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getMascara } from '../lib/api';
 import Spinner from './Spinner';
-import ProductCard from './ProductCard';
+import MakeupCard from './MakeupCard';
 
 function Mascara() {
   const [productTypes, setProductTypes] = useState(null);
@@ -23,7 +23,7 @@ function Mascara() {
           {productTypes.map((singleProduct) => {
             if (singleProduct.id > 0 && singleProduct.id < 129) {
               return (
-                <ProductCard
+                <MakeupCard
                   key={singleProduct.id}
                   name={singleProduct.name}
                   image={singleProduct.image_link}

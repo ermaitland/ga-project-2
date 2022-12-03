@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getEyebrow } from '../lib/api';
 import Spinner from './Spinner';
-import ProductCard from './ProductCard';
+import MakeupCard from './MakeupCard';
 
 function Eyebrow() {
   const [productTypes, setProductTypes] = useState(null);
@@ -23,7 +23,7 @@ function Eyebrow() {
           {productTypes.map((singleProduct) => {
             if (singleProduct.id > 788 && singleProduct.id < 1019) {
               return (
-                <ProductCard
+                <MakeupCard
                   key={singleProduct.id}
                   name={singleProduct.name}
                   image={singleProduct.image_link}

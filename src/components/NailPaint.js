@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getNailPaint } from '../lib/api';
 import Spinner from './Spinner';
-import ProductCard from './ProductCard';
+import MakeupCard from './MakeupCard';
 
 function NailPaint() {
   const [productTypes, setProductTypes] = useState(null);
@@ -24,7 +24,7 @@ function NailPaint() {
           {productTypes.map((singleProduct) => {
             if (singleProduct.id > 0 && singleProduct.id < 129) {
               return (
-                <ProductCard
+                <MakeupCard
                   key={singleProduct.id}
                   name={singleProduct.name}
                   image={singleProduct.image_link}

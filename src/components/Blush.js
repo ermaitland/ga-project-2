@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getBlush } from '../lib/api';
 import Spinner from './Spinner';
-import ProductCard from './ProductCard';
+import MakeupCard from './MakeupCard';
 
 function Blush() {
   const [productTypes, setProductTypes] = useState(null);
@@ -24,7 +24,7 @@ function Blush() {
           {productTypes.map((singleProduct) => {
             if (singleProduct.id > 276 && singleProduct.id < 599) {
               return (
-                <ProductCard
+                <MakeupCard
                   key={singleProduct.id}
                   name={singleProduct.name}
                   image={singleProduct.image_link}

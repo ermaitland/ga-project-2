@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getFoundation } from '../lib/api';
 import Spinner from './Spinner';
-import ProductCard from './ProductCard';
+import MakeupCard from './MakeupCard';
 
 function Foundation() {
   const [productTypes, setProductTypes] = useState(null);
@@ -24,7 +24,7 @@ function Foundation() {
           {productTypes.map((singleProduct) => {
             if (singleProduct.id > 315 && singleProduct.id < 390) {
               return (
-                <ProductCard
+                <MakeupCard
                   key={singleProduct.id}
                   name={singleProduct.name}
                   image={singleProduct.image_link}

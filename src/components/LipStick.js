@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { getLipStick } from '../lib/api';
-import ProductCard from './ProductCard';
+import MakeupCard from './MakeupCard';
 import Spinner from './Spinner';
 
 function LipStick() {
@@ -24,7 +24,7 @@ function LipStick() {
           {productTypes.map((singleProduct) => {
             if (singleProduct.id > 0 && singleProduct.id < 129) {
               return (
-                <ProductCard
+                <MakeupCard
                   key={singleProduct.id}
                   name={singleProduct.name}
                   image={singleProduct.image_link}
