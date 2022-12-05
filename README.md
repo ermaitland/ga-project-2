@@ -36,70 +36,94 @@ We divided up the tasks to have enough time to finish the project. We new we wou
 # Build/Code Process
 
 The section I started with was the MakeupIndex.js. For this I knew I would need to also make an api file where I stored the Base url as well as the function to get the data.
+
+```js
 useEffect(() => {
-getAllMakeup()
-.then((res) => setMakeups(res.data))
-.catch((err) => console.log(err));
+  getAllMakeup()
+    .then((res) => setMakeups(res.data))
+    .catch((err) => console.log(err));
 }, []);
+```
+
 I used useEffect and the exported function to get data to set makeups as the data from the API.
-{makeups &&
-filterMakeups().map((makeup) => {
-if (makeup.id > 0 && makeup.id < 129) {
-return (
-<MakeupCard
-                    key={makeup.id}
-                    name={makeup.name}
-                    image={makeup.image_link}
-                    brand={makeup.brand}
-                    prodLink={makeup.product_link}
-                    tag={makeup.tag_list}
-                    description={makeup.description}
-                  />
-);
+
+```js
+{
+  makeups &&
+    filterMakeups().map((makeup) => {
+      if (makeup.id > 0 && makeup.id < 129) {
+        return (
+          <MakeupCard
+            key={makeup.id}
+            name={makeup.name}
+            image={makeup.image_link}
+            brand={makeup.brand}
+            prodLink={makeup.product_link}
+            tag={makeup.tag_list}
+            description={makeup.description}
+          />
+        );
+      }
+    });
 }
-})}
+```
+
 I then mapped the data and created a MakeupCard from each product which included a name, image, brand, link and description. I added in an if statement which meant only the first 129 products where shown. This was for multiple reasons. Firstly, there was over 1000 products on the API and so the loading page was very slow, and secondly, some of the image links were broken, so to avoid having missing pictures on our final page. I then had to make the Makeup Card, this was a function which took all the arguments stated above:
+
+```js
 const MakeupCard = ({ name, image, brand, tag, prodLink, description }) => {
+```
+
 Which was exported to be used in the MakeupIndex.
 We then discovered the individual card for each makeup would not be possible, so after discussion we thought a dropdown menu on the navbar would be a good thing to add in. I make the first item which was the Lipstick. I did this by adding in a function on the api file which allowed only the products with the product_type of lipstick. Then created a LipStick.js file. This was very similar to the MakeupIndex, but used “getLipStick()” function to only include the lipstick products.
+
+```js
 export const getLipStick = () =>
-axios.get(`${MAKEUP_ENDPOINT}?product_type=lipstick`);
+  axios.get(`${MAKEUP_ENDPOINT}?product_type=lipstick`);
+```
+
 This function required me to look at the documentation of the API in order to see what the URL of the lipsticks would be. It took a “?product_type=” to filter. Once this was worked out it make the other product sections easier to do.
 
 # Challenges
 
 We experienced some challenges with the API and the way in which you can search and filter the data. From our planning we had wanted to do a single makeup card where you can see the info for each makeup but due to some inconsistencies in the way the data is stored this was not possible. We had to think quickly on our feet to come up with another idea which would also showcase what we had learnt in React. We decided to do a drop down menu on the navbar which would take you to different products on the API based on brand.
+
 I also had to add in an if statement on the MakeupIndex to only allow some of the data to be shown. Initially the data was slow to load and a lot of the images in direct view did not appear due to broken links. Instead of allow the page to look this way I wanted to add in a line of code which would filter the data so there was much less and it was products which had images. I played around with the values a bit to see which ones looked good and gave a variety before settling on 0-129 for MakeupIndex.
+
 When I was merging the products Parul or the Lipstick page, with the MakeupCard I also played around with the if statements there in order to have a faster loading and image full page.
+
 This was the first project I have done in a group and it was definitely a learning curve. We had to learn very quickly how to work of the same repository and how to divide up work and ask for help.
 
 # Wins
 
 I am proud of the visual aspect of the project. I added a main.scss page which allowed for some more styles to be added as some of the bulma colours could be quite limited. I also added in some more media queries for things like the navbar which was hard to make work with a drop down on a tablet or phone.
 
+```css
 @media only screen and (max-width: 500px) {
-.FrontPage {
-.TitleText {
-font-size: 55px;
-padding-bottom: 150px;
-}
-.SubtitleText {
-font-size: 40px;
-color: rgb(242, 51, 223);
-font-weight: 600;
-padding-bottom: 260px;
-}
-.hero-body {
-opacity: 0.8;
-}
-}
+  .FrontPage {
+    .TitleText {
+      font-size: 55px;
+      padding-bottom: 150px;
+    }
+    .SubtitleText {
+      font-size: 40px;
+      color: rgb(242, 51, 223);
+      font-weight: 600;
+      padding-bottom: 260px;
+    }
+    .hero-body {
+      opacity: 0.8;
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-.Navbar {
-display: none;
+  .Navbar {
+    display: none;
+  }
 }
-}
+```
+
 This code section meant the Home page was readable and the navbar didn’t take half the screen when on a phone or tablet.
 I’m also proud of the smaller details I added in which help build the page overall, such as the Spinner for loading pages or the merging of ProductCard and MakeupCard. I initially make a Product card file which presented all the data for each product within the brand type on the drop down. However, I realised that this card was almost identical to the MakeupCard I already produced. So instead of repeating myself, to make the code more readable I merged the ProductCard and MakeupCard.
 
