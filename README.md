@@ -133,7 +133,7 @@ I think a key learning point from here would definitely be the paired programmin
 
 # Bugs
 
-There is a bug in the search bar, if you search for “blush” or “foundation” the results are blank. We know there is a product_type for both of these as we have them included on the drop down menu. This would be something that would require us looking into, it may be due to the way the API is sorted and, like with the “brand?.”, we added the ? as not all the products had a brand.
+There is a bug in the search bar, if you search for “blush” or “foundation” the results are blank. We know there is a product_type for both of these as we have them included on the drop down menu. This would be something that would require us looking into, it may be due to fact we have only included products with an id between 0-129, so this would be something to look into in the future.
 
 # Future Improvements
 
