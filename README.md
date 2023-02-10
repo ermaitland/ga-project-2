@@ -11,7 +11,7 @@ https://exploremakeup.netlify.app
 This project was done in a pair, I was working with Parul Singh. We both worked off the same repository and divided up the project to complete the tasks. The time frame was 48h.
 Technologies Used
 
-We used GitHub, Bulma, React, SCSS and Postman. Postman and Github were ways to view the APIs and collaborate with work. React, Bulma and SCSS were used to create the React App.
+We used GitHub, Bulma, React.js, SCSS and Postman. Postman and Github were ways to view the APIs and collaborate with work. React.js, Bulma and SCSS were used to create the React App.
 
 # Brief
 
@@ -34,7 +34,7 @@ This also included some stretch ideas. Once this was done we moved onto pseudoco
 
 <img alt='Plan of project-2' src='./assets_ReadMe/project-2.png'>
 
-We divided up the tasks to have enough time to finish the project. We knew we would have to do paired programming to produce a basic App.js page and NavBar.js as this would be the basis of most pages after that. We then decided I would take the MakeupIndex, MakeupCard, api and Spinner while Parul took the Navbar and the Home. We would then decide who took what as we got further through. I ended up helping with the Home, creating the bulma.scss and main.scss then LipStick and ProductCard (which I later merged with MakeupCard so I wasn’t repeating myself) as Parul worked on Blush, Eyebrows, Foundation, Mascara and SearchBar, while I worked on joining the products to the MakeupCard. The allocation of these tasks were done through communicating what we wanted to do as well as things we thought would be good to do to help us improve.
+We divided up the tasks to have enough time to finish the project. We knew we would have to do paired programming to produce a basic App.js page and NavBar.js as this would be the basis of most pages after that. We then decided I would take the MakeupIndex, MakeupCard, api and Spinner while Parul took the Navbar and the Home. We would then decide who took what as we got further through. I then lead the Home, creating the bulma.scss and main.scss then LipStick and ProductCard (which I later merged with MakeupCard so I wasn’t repeating myself) as Parul worked on Blush, Eyebrows, Foundation, Mascara and SearchBar, while I worked on joining the products to the MakeupCard. The allocation of these tasks were done through communicating what we wanted to do as well as things we thought would be good to do to help us improve.
 
 # Build/Code Process
 
@@ -91,11 +91,13 @@ This function required me to look at the documentation of the API in order to se
 
 We experienced some challenges with the API and the way in which you can search and filter the data. From our planning we had wanted to do a single makeup card where you can see the info for each makeup but due to some inconsistencies in the way the data is stored this was not possible. We had to think quickly on our feet to come up with another idea which would also showcase what we had learnt in React. We decided to do a drop down menu on the navbar which would take you to different products on the API based on brand.
 
-I also had to add in an if statement on the MakeupIndex to only allow some of the data to be shown. Initially the data was slow to load and a lot of the images in direct view did not appear due to broken links. Instead of allowing the page to look this way I wanted to add in a line of code which would filter the data so there was much less and it was products which had images. I played around with the values a bit to see which ones looked good and gave a variety before settling on 0-129 for MakeupIndex.
+I also had to add in an if statement on the MakeupIndex to only allow some of the data to be shown. Initially the data was slow to load and a lot of the images in direct view did not appear due to broken links. Instead of allowing the page to look this way I wanted to add in a line of code which would reduce the data so there was less and it contained only products which had images. I played around with the values a bit to see which ones looked good and gave a variety before settling on 0-129 for MakeupIndex.
 
 When I was merging the products Parul or the Lipstick page, with the MakeupCard I also played around with the if statements there in order to have a faster loading and image full page.
-This was the first project I have done in a group and it was definitely a learning curve. We had to learn very quickly how to work in the same repository and how to divide up work and ask for help.
-Wins
+
+This was the first group project and it was definitely a learning curve. We had to learn very quickly how to work in the same repository and how to divide up work and ask for help.
+
+# Wins
 
 I am proud of the visual aspect of the project. I added a main.scss page which allowed for some more styles to be added as some of the bulma colours could be quite limited. I also added in some more media queries for things like the navbar which was hard to make work with a drop down on a tablet or phone.
 
