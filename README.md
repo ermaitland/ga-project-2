@@ -30,11 +30,11 @@ Overview
 
 The first thing we did was look through the public APIs to find one we thought was interesting. Once this was found and we checked it on Postman we started to use Excalidraw to plan a wire frame of what we would do.
 
-This also included some stretch ideas. Once this was done we moved onto pseudocode. We wrote out a rough outline of what each page would need in it as well as important functions to be included. This then led to box-timing and dividing up of the tasks, with the knowledge this could be flexible depending on how long tasks took people in reality.
+This also included some stretch ideas. Once this was done we moved onto pseudocode. We wrote out a rough outline of what each page would need in it as well as important functions to be included. This then led to box-timing and dividing up of the tasks, with the knowledge this could be flexible depending on how long each task took in reality.
 
 <img alt='Plan of project-2' src='./assets_ReadMe/project-2.png'>
 
-We divided up the tasks to have enough time to finish the project. We knew we would have to do paired programming to produce a basic App.js page and NavBar.js as this would be the basis of most pages after that. We then decided I would take the MakeupIndex, MakeupCard, api and Spinner while Parul took the Navbar and the Home. We would then decide who took what as we got further through. I then lead the Home, creating the bulma.scss and main.scss then LipStick and ProductCard (which I later merged with MakeupCard so I wasn’t repeating myself) as Parul worked on Blush, Eyebrows, Foundation, Mascara and SearchBar, while I worked on joining the products to the MakeupCard. The allocation of these tasks were done through communicating what we wanted to do as well as things we thought would be good to do to help us improve.
+We divided up the tasks to have enough time to finish the project. We knew we would have to do paired programming to produce a basic App.js page and NavBar.js as this would be the basis of most pages after that. We then decided I would take the MakeupIndex, MakeupCard, api and Spinner while Parul took the Navbar and the Home. We would then decide who took what as we got further through. I then lead the Home, creating the bulma.scss and main.scss then LipStick and ProductCard (which I later merged with MakeupCard so I wasn’t repeating myself), and the joining of the products to the MakeupCard as Parul worked on Blush, Eyebrows, Foundation, Mascara and SearchBar. The allocation of these tasks were done through communicating what we wanted to do as well as things we thought would be good to do to help us improve.
 
 # Build/Code Process
 
@@ -129,7 +129,7 @@ I am proud of the visual aspect of the project. I added a main.scss page which a
 
 This code section meant the Home page was readable and the navbar didn’t take up half the screen when on a phone or tablet.
 
-I’m also proud of the smaller details I added in which help build the page overall, such as the Spinner for loading pages or the merging of ProductCard and MakeupCard. I initially made a Product card file which presented all the data for each product within the brand type on the drop down. However, I realised that this card was almost identical to the MakeupCard I already produced. So instead of repeating myself, to make the code more readable I merged the ProductCard and MakeupCard.
+I’m also proud of the smaller details I added in which help build the page overall, such as the Spinner for loading pages or the merging of ProductCard and MakeupCard. I initially made a ProductCard file which presented all the data for each product within the brand type on the drop down. However, I realised that this card was almost identical to the MakeupCard I already produced. So instead of repeating myself, to make the code more readable I merged the ProductCard and MakeupCard.
 
 # Key Learnings/Takeaways
 
