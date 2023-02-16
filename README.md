@@ -1,6 +1,6 @@
 # Description
 
-We had to make a React App using external APIs. We were in pairs for this task and worked off the same repository to create the final product. After seeing what public APIs were available to us, we decided on a makeup app. This would directly link you to the product as well as give you information on each product. Overall making finding your next makeup choice easier as there is a cast amount of choice.
+For the second project in the General Assembly Software Engineering Immersive course, we had to make a React App using external APIs. We were in pairs for this task and worked off the same repository to create the final product. After seeing what public APIs were available to us, we decided on a makeup app. This would directly link you to the product as well as give you information on each product. Overall making finding your next makeup choice easier as there is a cast amount of choice.
 
 # Deployment link
 
@@ -43,7 +43,7 @@ We divided up the tasks to have enough time to finish the project. We knew we wo
 
 # Build/Code Process
 
-The section I started with was the MakeupIndex. For this I knew I would need to also make an api file where I stored the base url as well as the function to get the data.
+The section I started with was the MakeupIndex. For this I knew I would need to also make an api file where I stored the base URL as well as the function to get the data.
 
 ```js
 useEffect(() => {
@@ -103,7 +103,7 @@ This was the first group project and it was definitely a learning curve. We had 
 
 # Wins
 
-I am proud of the visual aspect of the project. I added a main.scss page which allowed for some more styles to be added as some of the bulma colours could be quite limited. I also added in some more media queries for things like the navbar which was hard to make work with a drop down on a tablet or phone.
+I am proud of the visual aspect of the project. I added a main.scss page which allowed for some more styles to be added as some of the Bulma colours could be quite limited. I also added in some more media queries for things like the navbar which was hard to make work with a drop down on a tablet or phone.
 
 ```css
 @media only screen and (max-width: 500px) {
