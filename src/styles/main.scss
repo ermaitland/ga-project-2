@@ -1,1 +1,57 @@
-@import '~bulma/bulma.sass'; // ! comment out this line if you DO NOT want to use Bulma
+.FrontPage {
+  .hero-body {
+    background-image: url('https://cdn.britannica.com/35/222035-050-C68AD682/makeup-cosmetics.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+  }
+  .TitleText {
+    font-size: 95px;
+  }
+  .SubtitleText {
+    font-size: 40px;
+    color: hotpink;
+  }
+}
+.LoadingPage {
+  .hero-body {
+    background-image: url('https://www.stylist.co.uk/images/app/uploads/2019/02/13151207/makeup-bag-beauty-products.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+  }
+}
+.Card-Header {
+  height: 80px;
+}
+
+.Description {
+  max-height: 200px;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 500px) {
+  .FrontPage {
+    .TitleText {
+      font-size: 55px;
+      padding-bottom: 150px;
+    }
+    .SubtitleText {
+      font-size: 40px;
+      color: rgb(242, 51, 223);
+      font-weight: 600;
+      padding-bottom: 260px;
+    }
+    .hero-body {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Navbar {
+    display: none;
+  }
+}
